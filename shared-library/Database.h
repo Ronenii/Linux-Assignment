@@ -4,9 +4,12 @@
 #include <vector>
 #include <string>
 #include <fstream>
+#include <filesystem>
+#include <iostream>
 #include "Flight.h"
 
 using namespace std;
+using namespace filesystem;
 
 class Database {
     vector<Flight> flights;
