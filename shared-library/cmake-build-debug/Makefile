@@ -129,29 +129,29 @@ shared_library/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_library.dir/build.make CMakeFiles/shared_library.dir/build
 .PHONY : shared_library/fast
 
-Database.o: Database.cpp.o
-.PHONY : Database.o
+AirportFlights.o: AirportFlights.cpp.o
+.PHONY : AirportFlights.o
 
 # target to build an object file
-Database.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_library.dir/build.make CMakeFiles/shared_library.dir/Database.cpp.o
-.PHONY : Database.cpp.o
+AirportFlights.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_library.dir/build.make CMakeFiles/shared_library.dir/AirportFlights.cpp.o
+.PHONY : AirportFlights.cpp.o
 
-Database.i: Database.cpp.i
-.PHONY : Database.i
+AirportFlights.i: AirportFlights.cpp.i
+.PHONY : AirportFlights.i
 
 # target to preprocess a source file
-Database.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_library.dir/build.make CMakeFiles/shared_library.dir/Database.cpp.i
-.PHONY : Database.cpp.i
+AirportFlights.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_library.dir/build.make CMakeFiles/shared_library.dir/AirportFlights.cpp.i
+.PHONY : AirportFlights.cpp.i
 
-Database.s: Database.cpp.s
-.PHONY : Database.s
+AirportFlights.s: AirportFlights.cpp.s
+.PHONY : AirportFlights.s
 
 # target to generate assembly for a file
-Database.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_library.dir/build.make CMakeFiles/shared_library.dir/Database.cpp.s
-.PHONY : Database.cpp.s
+AirportFlights.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_library.dir/build.make CMakeFiles/shared_library.dir/AirportFlights.cpp.s
+.PHONY : AirportFlights.cpp.s
 
 Flight.o: Flight.cpp.o
 .PHONY : Flight.o
@@ -210,9 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... shared_library"
-	@echo "... Database.o"
-	@echo "... Database.i"
-	@echo "... Database.s"
+	@echo "... AirportFlights.o"
+	@echo "... AirportFlights.i"
+	@echo "... AirportFlights.s"
 	@echo "... Flight.o"
 	@echo "... Flight.i"
 	@echo "... Flight.s"

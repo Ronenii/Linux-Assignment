@@ -83,19 +83,19 @@ CMakeFiles/shared_library.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shared_library.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/main.cpp -o CMakeFiles/shared_library.dir/main.cpp.s
 
-CMakeFiles/shared_library.dir/Database.cpp.o: CMakeFiles/shared_library.dir/flags.make
-CMakeFiles/shared_library.dir/Database.cpp.o: /home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/Database.cpp
-CMakeFiles/shared_library.dir/Database.cpp.o: CMakeFiles/shared_library.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/shared_library.dir/Database.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shared_library.dir/Database.cpp.o -MF CMakeFiles/shared_library.dir/Database.cpp.o.d -o CMakeFiles/shared_library.dir/Database.cpp.o -c /home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/Database.cpp
+CMakeFiles/shared_library.dir/AirportFlights.cpp.o: CMakeFiles/shared_library.dir/flags.make
+CMakeFiles/shared_library.dir/AirportFlights.cpp.o: /home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/AirportFlights.cpp
+CMakeFiles/shared_library.dir/AirportFlights.cpp.o: CMakeFiles/shared_library.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/shared_library.dir/AirportFlights.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shared_library.dir/AirportFlights.cpp.o -MF CMakeFiles/shared_library.dir/AirportFlights.cpp.o.d -o CMakeFiles/shared_library.dir/AirportFlights.cpp.o -c /home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/AirportFlights.cpp
 
-CMakeFiles/shared_library.dir/Database.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shared_library.dir/Database.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/Database.cpp > CMakeFiles/shared_library.dir/Database.cpp.i
+CMakeFiles/shared_library.dir/AirportFlights.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shared_library.dir/AirportFlights.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/AirportFlights.cpp > CMakeFiles/shared_library.dir/AirportFlights.cpp.i
 
-CMakeFiles/shared_library.dir/Database.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shared_library.dir/Database.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/Database.cpp -o CMakeFiles/shared_library.dir/Database.cpp.s
+CMakeFiles/shared_library.dir/AirportFlights.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shared_library.dir/AirportFlights.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/AirportFlights.cpp -o CMakeFiles/shared_library.dir/AirportFlights.cpp.s
 
 CMakeFiles/shared_library.dir/Flight.cpp.o: CMakeFiles/shared_library.dir/flags.make
 CMakeFiles/shared_library.dir/Flight.cpp.o: /home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/Flight.cpp
@@ -114,14 +114,14 @@ CMakeFiles/shared_library.dir/Flight.cpp.s: cmake_force
 # Object files for target shared_library
 shared_library_OBJECTS = \
 "CMakeFiles/shared_library.dir/main.cpp.o" \
-"CMakeFiles/shared_library.dir/Database.cpp.o" \
+"CMakeFiles/shared_library.dir/AirportFlights.cpp.o" \
 "CMakeFiles/shared_library.dir/Flight.cpp.o"
 
 # External object files for target shared_library
 shared_library_EXTERNAL_OBJECTS =
 
 shared_library: CMakeFiles/shared_library.dir/main.cpp.o
-shared_library: CMakeFiles/shared_library.dir/Database.cpp.o
+shared_library: CMakeFiles/shared_library.dir/AirportFlights.cpp.o
 shared_library: CMakeFiles/shared_library.dir/Flight.cpp.o
 shared_library: CMakeFiles/shared_library.dir/build.make
 shared_library: CMakeFiles/shared_library.dir/link.txt

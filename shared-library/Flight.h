@@ -2,6 +2,7 @@
 #define SHARED_LIBRARY_FLIGHT_H
 
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -37,6 +38,8 @@ public:
     const string &getCallsign() const;
 
     void setCallsign(const string &_callsign);
+
+    void print() const { cout << icao24 << ", " << firstSeen << ", " << estDepartureAirport << ", " << lastSeen << ", " << estArrivalAirport << ", " << callsign << endl; }
 };
 
 

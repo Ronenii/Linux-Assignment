@@ -82,10 +82,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/Database.cpp">
+		<Unit filename="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/AirportFlights.cpp">
 			<Option target="shared_library"/>
 		</Unit>
-		<Unit filename="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/Database.h">
+		<Unit filename="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/AirportFlights.h">
 			<Option target="shared_library"/>
 		</Unit>
 		<Unit filename="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/Flight.cpp">

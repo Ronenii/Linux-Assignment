@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/Database.cpp" "CMakeFiles/shared_library.dir/Database.cpp.o" "gcc" "CMakeFiles/shared_library.dir/Database.cpp.o.d"
+  "/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/AirportFlights.cpp" "CMakeFiles/shared_library.dir/AirportFlights.cpp.o" "gcc" "CMakeFiles/shared_library.dir/AirportFlights.cpp.o.d"
   "/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/Flight.cpp" "CMakeFiles/shared_library.dir/Flight.cpp.o" "gcc" "CMakeFiles/shared_library.dir/Flight.cpp.o.d"
   "/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/main.cpp" "CMakeFiles/shared_library.dir/main.cpp.o" "gcc" "CMakeFiles/shared_library.dir/main.cpp.o.d"
   )
