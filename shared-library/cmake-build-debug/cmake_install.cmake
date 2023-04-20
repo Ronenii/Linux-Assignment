@@ -1,4 +1,4 @@
-# Install script for directory: /home/idan-ubuntu/CLionProjects/linux-assignment/shared-library
+# Install script for directory: /home/roy12/CLionProjects/Linux-Assignment/shared-library
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

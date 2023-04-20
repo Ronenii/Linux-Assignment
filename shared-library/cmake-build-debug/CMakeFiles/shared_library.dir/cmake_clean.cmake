@@ -5,8 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/shared_library.dir/Flight.cpp.o.d"
   "CMakeFiles/shared_library.dir/main.cpp.o"
   "CMakeFiles/shared_library.dir/main.cpp.o.d"
-  "shared_library"
-  "shared_library.pdb"
+  "libshared_library.pdb"
+  "libshared_library.so"
 )
 
 # Per-language clean rules from dependency scanning.
