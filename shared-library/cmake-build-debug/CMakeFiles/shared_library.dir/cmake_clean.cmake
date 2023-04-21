@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/shared_library.dir/AirportFlights.cpp.o.d"
   "CMakeFiles/shared_library.dir/Flight.cpp.o"
   "CMakeFiles/shared_library.dir/Flight.cpp.o.d"
+  "CMakeFiles/shared_library.dir/Functions.cpp.o"
+  "CMakeFiles/shared_library.dir/Functions.cpp.o.d"
   "CMakeFiles/shared_library.dir/main.cpp.o"
   "CMakeFiles/shared_library.dir/main.cpp.o.d"
   "libshared_library.pdb"

@@ -40,6 +40,8 @@ public:
     void setCallsign(const string &_callsign);
 
     void print() const { cout << icao24 << ", " << firstSeen << ", " << estDepartureAirport << ", " << lastSeen << ", " << estArrivalAirport << ", " << callsign << endl; }
+
+
 };
 
 

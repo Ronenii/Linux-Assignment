@@ -47,3 +47,5 @@ const string &Flight::getCallsign() const {
 void Flight::setCallsign(const string &_callsign) {
     callsign = _callsign;
 }
+
+
