@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 17)
 add_library(shared_library SHARED
         AirportFlights.cpp
         Flight.cpp
-        Functions.cpp)
+        Functions.cpp ../Project1/main.cpp)
 
 target_include_directories(shared_library PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}

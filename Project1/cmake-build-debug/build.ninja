@@ -65,7 +65,6 @@ build CMakeFiles/Project1.dir/main.cpp.o: CXX_COMPILER__Project1_Debug /home/ron
 
 build Project1: CXX_EXECUTABLE_LINKER__Project1_Debug CMakeFiles/Project1.dir/main.cpp.o
   FLAGS = -g
-  LINK_LIBRARIES = -lMYLIB
   OBJECT_DIR = CMakeFiles/Project1.dir
   POST_BUILD = :
   PRE_LINK = :

@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/ronenii/CLionProjects/Linux-Assignment/Project1/main.cpp">
+			<Option target="shared_library"/>
+		</Unit>
 		<Unit filename="/home/ronenii/CLionProjects/Linux-Assignment/shared-library/AirportFlights.cpp">
 			<Option target="shared_library"/>
 		</Unit>

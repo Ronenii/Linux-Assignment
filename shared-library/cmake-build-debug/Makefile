@@ -201,6 +201,30 @@ Functions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_library.dir/build.make CMakeFiles/shared_library.dir/Functions.cpp.s
 .PHONY : Functions.cpp.s
 
+home/ronenii/CLionProjects/Linux-Assignment/Project1/main.o: home/ronenii/CLionProjects/Linux-Assignment/Project1/main.cpp.o
+.PHONY : home/ronenii/CLionProjects/Linux-Assignment/Project1/main.o
+
+# target to build an object file
+home/ronenii/CLionProjects/Linux-Assignment/Project1/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_library.dir/build.make CMakeFiles/shared_library.dir/home/ronenii/CLionProjects/Linux-Assignment/Project1/main.cpp.o
+.PHONY : home/ronenii/CLionProjects/Linux-Assignment/Project1/main.cpp.o
+
+home/ronenii/CLionProjects/Linux-Assignment/Project1/main.i: home/ronenii/CLionProjects/Linux-Assignment/Project1/main.cpp.i
+.PHONY : home/ronenii/CLionProjects/Linux-Assignment/Project1/main.i
+
+# target to preprocess a source file
+home/ronenii/CLionProjects/Linux-Assignment/Project1/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_library.dir/build.make CMakeFiles/shared_library.dir/home/ronenii/CLionProjects/Linux-Assignment/Project1/main.cpp.i
+.PHONY : home/ronenii/CLionProjects/Linux-Assignment/Project1/main.cpp.i
+
+home/ronenii/CLionProjects/Linux-Assignment/Project1/main.s: home/ronenii/CLionProjects/Linux-Assignment/Project1/main.cpp.s
+.PHONY : home/ronenii/CLionProjects/Linux-Assignment/Project1/main.s
+
+# target to generate assembly for a file
+home/ronenii/CLionProjects/Linux-Assignment/Project1/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_library.dir/build.make CMakeFiles/shared_library.dir/home/ronenii/CLionProjects/Linux-Assignment/Project1/main.cpp.s
+.PHONY : home/ronenii/CLionProjects/Linux-Assignment/Project1/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,6 +243,9 @@ help:
 	@echo "... Functions.o"
 	@echo "... Functions.i"
 	@echo "... Functions.s"
+	@echo "... home/ronenii/CLionProjects/Linux-Assignment/Project1/main.o"
+	@echo "... home/ronenii/CLionProjects/Linux-Assignment/Project1/main.i"
+	@echo "... home/ronenii/CLionProjects/Linux-Assignment/Project1/main.s"
 .PHONY : help
 
 
