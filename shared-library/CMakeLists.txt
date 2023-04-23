@@ -10,7 +10,8 @@ add_library(shared_library SHARED
         AirportFlights.h
         Flight.cpp
         Flight.h
-        )
+        Functions.cpp
+        Functions.h)
 
 # Specify include directories
 target_include_directories(shared_library PUBLIC
