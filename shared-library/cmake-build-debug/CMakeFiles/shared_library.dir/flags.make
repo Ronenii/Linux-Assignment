@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -Dshared_library_EXPORTS
 
-CXX_INCLUDES = -I/home/roy12/CLionProjects/Linux-Assignment/shared-library/src
+CXX_INCLUDES = -I/home/ronenii/CLionProjects/Linux-Assignment/shared-library
 
-CXX_FLAGS = -g -fPIC -fdiagnostics-color=always -Wall -Wextra -Werror -fvisibility=hidden
+CXX_FLAGS = -g -fPIC -fdiagnostics-color=always
 
