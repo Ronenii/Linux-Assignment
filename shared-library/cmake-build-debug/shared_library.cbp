@@ -8,96 +8,99 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug"/>
+				<Option working_dir="/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="shared_library">
-				<Option output="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/shared_library" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug"/>
+				<Option output="/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/libshared_library.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug"/>
 				<Option object_output="./"/>
-				<Option type="1"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/aarch64-linux-gnu/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/aarch64-linux-gnu/11/include"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/aarch64-linux-gnu"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 shared_library"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 shared_library"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="shared_library/fast">
-				<Option output="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/shared_library" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug"/>
+				<Option output="/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/libshared_library.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug"/>
 				<Option object_output="./"/>
-				<Option type="1"/>
+				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/aarch64-linux-gnu/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/aarch64-linux-gnu/11/include"/>
+					<Add directory="/usr/include/c++/12"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
+					<Add directory="/usr/include/c++/12/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/aarch64-linux-gnu"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 shared_library/fast"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 shared_library/fast"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug"/>
+				<Option working_dir="/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug"/>
+				<Option working_dir="/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/AirportFlights.cpp">
+		<Unit filename="/home/roy12/CLionProjects/Linux-Assignment/shared-library/AirportFlights.cpp">
 			<Option target="shared_library"/>
 		</Unit>
-		<Unit filename="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/AirportFlights.h">
+		<Unit filename="/home/roy12/CLionProjects/Linux-Assignment/shared-library/AirportFlights.h">
 			<Option target="shared_library"/>
 		</Unit>
-		<Unit filename="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/Flight.cpp">
+		<Unit filename="/home/roy12/CLionProjects/Linux-Assignment/shared-library/Flight.cpp">
 			<Option target="shared_library"/>
 		</Unit>
-		<Unit filename="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/Flight.h">
+		<Unit filename="/home/roy12/CLionProjects/Linux-Assignment/shared-library/Flight.h">
 			<Option target="shared_library"/>
 		</Unit>
-		<Unit filename="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/main.cpp">
+		<Unit filename="/home/roy12/CLionProjects/Linux-Assignment/shared-library/Functions.cpp">
 			<Option target="shared_library"/>
 		</Unit>
-		<Unit filename="/home/idan-ubuntu/CLionProjects/linux-assignment/shared-library/CMakeLists.txt">
+		<Unit filename="/home/roy12/CLionProjects/Linux-Assignment/shared-library/Functions.h">
+			<Option target="shared_library"/>
+		</Unit>
+		<Unit filename="/home/roy12/CLionProjects/Linux-Assignment/shared-library/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -14,6 +14,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/roy12/clion/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake"
   "/home/roy12/clion/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake"
   "/home/roy12/clion/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake"
+  "/home/roy12/clion/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+  "/home/roy12/clion/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeFindCodeBlocks.cmake"
   "/home/roy12/clion/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake"
   "/home/roy12/clion/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake"
   "/home/roy12/clion/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake"
@@ -28,6 +30,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/roy12/clion/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake"
   "/home/roy12/clion/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux.cmake"
   "/home/roy12/clion/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/UnixPaths.cmake"
+  "/home/roy12/clion/bin/cmake/linux/x64/share/cmake-3.25/Modules/ProcessorCount.cmake"
   )
 
 # The corresponding makefile is:
