@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libshared_library.so -o libshared_library.so CMakeFiles/shared_library.dir/main.cpp.o CMakeFiles/shared_library.dir/AirportFlights.cpp.o CMakeFiles/shared_library.dir/Flight.cpp.o 
