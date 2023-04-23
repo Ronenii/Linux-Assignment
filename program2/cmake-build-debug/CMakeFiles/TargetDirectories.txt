@@ -1,0 +1,3 @@
+/home/idan-ubuntu/CLionProjects/linux-assignment/program2/cmake-build-debug/CMakeFiles/program2.dir
+/home/idan-ubuntu/CLionProjects/linux-assignment/program2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/idan-ubuntu/CLionProjects/linux-assignment/program2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

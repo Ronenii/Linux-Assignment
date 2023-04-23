@@ -1,0 +1,4 @@
+/home/idan-ubuntu/clion/bin/cmake/linux/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/idan-ubuntu/clion/bin/ninja/linux/aarch64/ninja -G Ninja -S /home/idan-ubuntu/CLionProjects/linux-assignment/program2 -B /home/idan-ubuntu/CLionProjects/linux-assignment/program2/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/idan-ubuntu/CLionProjects/linux-assignment/program2/cmake-build-debug
