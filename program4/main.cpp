@@ -12,9 +12,25 @@ int main(int argc, char* argv[]) {
         cout << "Error: could not receive the program's path!" << endl;
         return 1;
     }
+    string path = program_path; // Convert to string.
 
-    string path = program_path;
+    // Find the position of second to last '/' character.
+    size_t pos = path.find_last_of('/');
+    if(pos != string::npos) {
+        pos = path.find_last_of('/', pos - 1);
+
+        // Update to path to remove the excess characters.
+        path = path.substr(0, pos);
+    }
+    else {
+        cout << "Error: could not find index of '/'" << endl;
+        return 1;
+    }
+
+    // Add the script to the path.
     path += "/script.sh";
+
+    cout << path << endl;
 
     for (int i = 1; i < argc; ++i) { // Add airports to the path.
         path += " " + (string)argv[i];
