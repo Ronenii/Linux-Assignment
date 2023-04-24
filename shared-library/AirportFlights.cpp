@@ -88,8 +88,5 @@ void AirportFlights::getFlightsFromFile(AirportFlights &airport, ifstream &file,
         {
             airport.addDepartureFlight(currFlight);
         }
-
-        cout << "Successfully received flight: " << flush;
-        currFlight.print();
     }
 }
