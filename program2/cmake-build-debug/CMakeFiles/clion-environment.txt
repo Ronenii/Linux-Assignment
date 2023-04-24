@@ -1,0 +1,3 @@
+ToolSet: 1.0 (local)Options: 
+
+Options:-DCMAKE_MAKE_PROGRAM=/home/idan-ubuntu/clion/bin/ninja/linux/aarch64/ninja

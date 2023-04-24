@@ -48,4 +48,21 @@ void Flight::setCallsign(const string &_callsign) {
     callsign = _callsign;
 }
 
+/**
+ * Get the time of arrival/departure to/from a given airport.
+ */
+int Flight::getTime(const string &airport_name) {
+    if(estArrivalAirport == airport_name)
+        return lastSeen;
+    else
+        return firstSeen;
+}
+
+/**
+ * Get if the flight
+ */
+bool Flight::isArriving(const string &airport_name) {
+    return estArrivalAirport == airport_name;
+}
+
 
