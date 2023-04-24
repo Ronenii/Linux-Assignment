@@ -5,8 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/shared_library.dir/Flight.cpp.o.d"
   "CMakeFiles/shared_library.dir/Functions.cpp.o"
   "CMakeFiles/shared_library.dir/Functions.cpp.o.d"
-  "CMakeFiles/shared_library.dir/home/ronenii/CLionProjects/Linux-Assignment/Project1/main.cpp.o"
-  "CMakeFiles/shared_library.dir/home/ronenii/CLionProjects/Linux-Assignment/Project1/main.cpp.o.d"
   "libshared_library.pdb"
   "libshared_library.so"
 )

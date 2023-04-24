@@ -24,7 +24,6 @@
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/ronenii/CLionProjects/Linux-Assignment/shared-library"/>
 					<Add directory="/usr/include/c++/11"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
 					<Add directory="/usr/include/c++/11/backward"/>
@@ -47,7 +46,6 @@
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/ronenii/CLionProjects/Linux-Assignment/shared-library"/>
 					<Add directory="/usr/include/c++/11"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
 					<Add directory="/usr/include/c++/11/backward"/>
@@ -84,9 +82,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/ronenii/CLionProjects/Linux-Assignment/Project1/main.cpp">
-			<Option target="shared_library"/>
-		</Unit>
 		<Unit filename="/home/ronenii/CLionProjects/Linux-Assignment/shared-library/AirportFlights.cpp">
 			<Option target="shared_library"/>
 		</Unit>
