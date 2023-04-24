@@ -39,10 +39,14 @@ public:
 
     void setCallsign(const string &_callsign);
 
-    void print() const { cout << icao24 << ", " << firstSeen << ", " << estDepartureAirport << ", " << lastSeen << ", " << estArrivalAirport << ", " << callsign << endl; }
+    void print() const {
+        cout << icao24 << ", " << firstSeen << ", " << estDepartureAirport << ", " << lastSeen << ", "
+             << estArrivalAirport << ", " << callsign << endl;
+    }
 
+    int getTime(const string &airport_name);
 
+    bool isArriving(const string &airport_name);
 };
-
 
 #endif //SHARED_LIBRARY_FLIGHT_H

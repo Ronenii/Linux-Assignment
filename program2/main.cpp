@@ -24,19 +24,6 @@ bool compareFlights(const Flight &f1, const Flight &f2, const string &airport_na
     return time_f1 < time_f2;
 }
 
-/**
- * Get the time of arrival/departure to/from a given airport.
- */
-int getTime(const Flight &f, const string &airport_name) {
-    if(f.getEstArrivalAirport() == airport_name)
-        return f.getLastSeen();
-    else
-        return f.getFirstSeen();
-}
-
-bool isArriving(const Flight &f, const string &airport_name) {
-    return f.getEstArrivalAirport() == airport_name;
-}
 
 int main(int argc, char *argv[]) {
     string airport_name = argv[1];
