@@ -1,0 +1,3 @@
+/home/ronenii/CLionProjects/Linux-Assignment/Program1/cmake-build-debug/CMakeFiles/Program1.dir
+/home/ronenii/CLionProjects/Linux-Assignment/Program1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ronenii/CLionProjects/Linux-Assignment/Program1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
