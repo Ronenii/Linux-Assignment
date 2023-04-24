@@ -43,11 +43,11 @@ int main(int argc, char *argv[]) {
     }
 
     // Print sorted flights details:
-    for(const Flight& curr : airport_flights) {
-        if(isArriving(curr, airport_name))  // Arriving to received airport.
-            cout << "Flight " << curr.getCallsign() << " arriving from " << curr.getEstDepartureAirport() << " at " << getTime(curr, airport_name) << endl;
+    for(Flight& curr : airport_flights) {
+        if(curr.isArriving(airport_name))  // Arriving to received airport.
+            cout << "Flight " << curr.getCallsign() << " arriving from " << curr.getEstDepartureAirport() << " at " << curr.getTime(airport_name) << endl;
         else                                   // Departing from received airport.
-            cout << "Flight " << curr.getCallsign() << " departing to " << curr.getEstArrivalAirport() << " at " << getTime(curr, airport_name) << endl;
+            cout << "Flight " << curr.getCallsign() << " departing to " << curr.getEstArrivalAirport() << " at " << curr.getTime(airport_name) << endl;
     }
     return 0;
 }
