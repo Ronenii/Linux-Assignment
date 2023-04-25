@@ -1,0 +1,19 @@
+Index: shared-library/cmake-build-debug/CMakeFiles/clion-Debug-log.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/home/roy12/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_BUILD_TYPE=Debug -G \"Unix Makefiles\" -S /home/roy12/CLionProjects/Linux-Assignment/shared-library -B /home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug\n-- Configuring done\n-- Generating done\n-- Build files have been written to: /home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug\n
+===================================================================
+diff --git a/shared-library/cmake-build-debug/CMakeFiles/clion-Debug-log.txt b/shared-library/cmake-build-debug/CMakeFiles/clion-Debug-log.txt
+--- a/shared-library/cmake-build-debug/CMakeFiles/clion-Debug-log.txt	
++++ b/shared-library/cmake-build-debug/CMakeFiles/clion-Debug-log.txt	
+@@ -1,4 +1,6 @@
+-/home/roy12/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /home/roy12/CLionProjects/Linux-Assignment/shared-library -B /home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug
+--- Configuring done
+--- Generating done
+--- Build files have been written to: /home/roy12/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug
++/snap/clion/234/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/ronen/CLionProjects/Linux-Assignment/shared-library -B /home/ronen/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug
++CMake Error: CMake was unable to find a build program corresponding to "Unix Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
++CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
++CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
++-- Configuring incomplete, errors occurred!
++See also "/home/ronen/CLionProjects/Linux-Assignment/shared-library/cmake-build-debug/CMakeFiles/CMakeOutput.log".
