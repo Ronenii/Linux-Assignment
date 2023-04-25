@@ -1,6 +1,0 @@
-#include ""
-
-void main()
-{
-
-}
