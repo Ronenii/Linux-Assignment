@@ -1,7 +1,8 @@
 #include <iostream>
-#include "AirportFlights.h"
-#include "Functions.h"
-#include "Flight.h"
+#include "../shared-library/AirportFlights.h"
+#include "../shared-library/Functions.h"
+#include "../shared-library/Flight.h"
+
 int main() {
     std::cout << "Hello, World!" << std::endl;
     vector<AirportFlights> DB = AirportFlights::getDatabase();

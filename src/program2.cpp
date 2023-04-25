@@ -1,9 +1,9 @@
 #include <iostream>
 #include <algorithm>
 #include <string>
-#include "Flight.h"
-#include "Functions.h"
-#include "AirportFlights.h"
+#include "../shared-library/Flight.h"
+#include "../shared-library/Functions.h"
+#include "../shared-library/AirportFlights.h"
 
 /**
  * Compare two flights by the time of arrival/departure to/from a given airport.
