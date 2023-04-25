@@ -1,7 +1,7 @@
 #include <iostream>
-#include "../shared-library/AirportFlights.h"
-#include "../shared-library/Functions.h"
-#include "../shared-library/Flight.h"
+#include "../shared_library/AirportFlights.h"
+#include "../shared_library/Functions.h"
+#include "../shared_library/Flight.h"
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
