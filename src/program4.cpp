@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
 #include <cstdlib>
-#include "../shared-library/Functions.h"
-#include "../shared-library/Flight.h"
-#include "../shared-library/AirportFlights.h"
+#include "../lib/Functions.h"
+#include "../lib/Flight.h"
+#include "../lib/AirportFlights.h"
 
 int main(int argc, char* argv[]) {
     char* program_path = realpath(argv[0], nullptr);

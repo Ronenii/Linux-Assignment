@@ -1,6 +1,6 @@
 #include <iostream>
-#include "../shared_library/Flight.h"
-#include "../shared_library/AirportFlights.h"
+#include "../lib/Flight.h"
+#include "../lib/AirportFlights.h"
 #include <vector>
 
 void printFlightsWithICAO24(vector<AirportFlights> &DB, string icao24);
