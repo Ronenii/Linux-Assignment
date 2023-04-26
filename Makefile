@@ -16,24 +16,27 @@ OBJDIR=obj# Object files directory
 LIB = libshared_library.so	# name of shared library.
 
 
-# Array of the source files of the programs.
-SRCS := $(wildcard $(SRCDIR)/*.cpp)
-
 # Array of the source files of the shared library.
-LIBS := $(wildcard $(LIBDIR)/*.cpp)
+LIB_SRCS := $(wildcard $(LIBDIR)/*.cpp)
 
-# Array of all corresponding object files created from the source files.
-#OBJS := $(addprefix $OBJDIR/,$(patsubst %.cpp,%.o,$SRCS))
-LIB_OBJS := $(patsubst %.cpp,%.o,$(LIBS))
-PROG_OBJS := $(patsubst %.cpp,%.out,$(SRCS))
+# Create corresponding object files from shared library source files.
+LIB_OBJS := $(LIB_SRCS:.cpp=.o)
+
+
+# Array of the source files of the programs.
+PROG_SRCS := $(wildcard $(SRCDIR)/*.cpp)
+
+# Create out files from corresponding programs' source files.
+PROG_OBJS := $(patsubst %.cpp,%.out,$(PROG_SRCS))
+
 
 # Default target
 .PHONY: all clean
-all: $(LIB_OBJS) $(PROG_OBJS)
+all: $(LIB)
 
 # Rule for creating the shared library:
 $(LIB) : $(LIB_OBJS)
-	$(CC) -shared -fPIC -o $@ &<
+	$(CC) -shared -fPIC -o $@ $^
 
 # Rule for compiling source files:
 %.o : %.cpp
