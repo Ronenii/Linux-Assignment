@@ -9,10 +9,10 @@ int main(int argc, char* argv[]) {
 
     // For every airport received:
     for (int i = 0; i <= argc; ++i) {
-        for(auto& airport: DB) { // Find that airport in the database.
-            if(argv[i] == airport.getAirportName()) {   // Found the airport
-                arrivals = airport.getArrivals();       // Get the arrival flights for the airport.
-                printFlights(arrivals);           // Print arrival flights.
+        for(auto& airport: DB) {            // Find that airport in the database.
+            if(argv[i] == airport.getAirportName()) {    // Found the airport
+                arrivals = airport.getArrivals();        // Get the arrival flights for the airport.
+                printFlights(arrivals);            // Print arrival flights.
                 break;
             }
         }
