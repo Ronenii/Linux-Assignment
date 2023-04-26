@@ -27,8 +27,6 @@ public:
     void addDepartureFlight(const Flight &_flight) { departures.push_back(_flight); }
     static vector<AirportFlights> getDatabase();
     static void getFlightsFromFile(AirportFlights &airport, ifstream &file, bool flightStatus);
-
-
 };
 
 

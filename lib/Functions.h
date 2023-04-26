@@ -4,6 +4,7 @@
 #include "AirportFlights.h"
 #include "Flight.h"
 #include <unistd.h>
+#define SCRIPT_NAME "/flight_scanner.sh"
 
 class Functions {
 public:
@@ -12,6 +13,7 @@ public:
     static vector<Flight> getArrivalsByAirportName(string airportName, vector<AirportFlights> &DB);
     static vector<Flight> getFlightsByCallsign(string callsign, vector<AirportFlights> &DB);
     static void pushFlightsByCallsign(const vector<Flight> &src, vector<Flight> &dst, string callsign);
+    static void updateDatabase(vector<AirportFlights>& db);
 };
 
 

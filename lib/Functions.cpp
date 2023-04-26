@@ -60,3 +60,19 @@ void Functions::pushFlightsByCallsign(const vector<Flight> &src, vector<Flight> 
         }
     }
 }
+
+void Functions::updateDatabase(vector<AirportFlights>& DB) {
+    path program_path = current_path().parent_path() / SCRIPT_NAME;
+
+    for (const AirportFlights& f : DB) { // Add airports to the path.
+        program_path += " " + f.getAirportName();
+    }
+
+    // Run the script.
+    int status = system(program_path.c_str());
+
+    if(status != 0) { // Error running the script.
+        cout << "Error: cannot run the script with the path provided!" << endl;
+        exit(1);
+    }
+}
