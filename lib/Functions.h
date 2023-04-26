@@ -4,7 +4,7 @@
 #include "AirportFlights.h"
 #include "Flight.h"
 #include <unistd.h>
-#define SCRIPT_NAME "/flight_scanner.sh"
+#define SCRIPT_NAME "flight_scanner.sh"
 
 class Functions {
 public:
