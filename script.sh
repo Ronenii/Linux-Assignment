@@ -6,7 +6,7 @@ NOF_PARAMS=$#                     # get the number of input parameters received.
 CURR_TIME=$(date +%s)             # current time since epoch.
 TIME_24H=$(($CURR_TIME - 86400))  # time since epoch- 24 hours before the current time.
 
-mkdir flightsDB   # create directory where the flights data will be stored.
+mkdir -p flightsDB   # create directory where the flights data will be stored.
 cd flightsDB      # enter the created directory.
 
 # get each airport's arrival and departure flights:

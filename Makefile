@@ -1,43 +1,49 @@
 # Compiler and flags
+.DEFAULT_GOAL := all
 CC = g++
-CFLAGS = -Wall -Wextra -std=c++11
+CFLAGS = -fPIC -Wall -Wextra -std=c++17
 
 # Linker flags
-LDFLAGS = -L./objects -lutils
+LDFLAGS = -L./lib -Ilib -Wl,-rpath='pwd'
 
 # Directories
-SRCDIR = src
-LIBDIR = lib
-OBJDIR = objects
-EXEDIR = executables
+SRCDIR = src		# Source files directory
+LIBDIR = lib		# Shared library files directory
+OBJDIR = obj		# Object files directory
 
-# Programs to compile
-PROGRAMS = $(EXEDIR)/program1.out $(EXEDIR)/program2.out $(EXEDIR)/program3.out $(EXEDIR)/program4.out
+# File Names
+LIB = libshared_library.so	# name of shared library.
+
+
+# Array of the source files of the programs.
+SRCS := $(wildcard $(SRCDIR)/*.cpp)
+
+# Array of the source files of the shared library.
+LIBS := $(wildcard $(LIBDIR)/*.cpp)
+
+# Array of all corresponding object files created from the source files.
+#OBJS := $(addprefix $OBJDIR/,$(patsubst %.cpp,%.o,$SRCS))
+PROG_OBJS := $(patsubst %.cpp,%.o,$(SRCS))
+LIB_OBJS := $(patsubst %.cpp,%.o,$(LIBS))
 
 # Default target
 .PHONY: all clean
-all: $(PROGRAMS)
+all: $(PROG_OBJS)
 
-# Compile object files from source files
-$(OBJDIR)/%.o: $(SRCDIR)/%.cpp
-	$(CC) $(CFLAGS) -c $< -o $@
+# Rule for compiling source files:
+%.o : %.cpp
+	$(CC) -c $(CFLAGS) $< -o $@
 
-# Link program1.out
-$(EXEDIR)/program1.out: $(OBJDIR)/program1.o
-	$(CC) $< $(LDFLAGS) -o $@
+# Rule for making the .out files:
+%.out : %.o
+	$(CC) $^ -o $@ $(LDFLAGS) $(LIB)
 
-# Link program2.out
-$(EXEDIR)/program2.out: $(OBJDIR)/program2.o
-	$(CC) $< $(LDFLAGS) -o $@
-
-# Link program3.out
-$(EXEDIR)/program3.out: $(OBJDIR)/program3.o
-	$(CC) $< $(LDFLAGS) -o $@
-
-# Link program4.out
-$(EXEDIR)/program4.out: $(OBJDIR)/program4.o
-	$(CC) $< $(LDFLAGS) -o $@
+# Rule for creating the shared library:
+$(LIB) : $(LIBS)
+	$(CC) -shared -fPIC $(CFLAGS) &< -o $@
 
 # Remove object files and programs
 clean:
-	rm -f $(OBJDIR)/*.o $(PROGRAMS)
+	rm -rf $(OBJDIR)							# Delete objects directory (with the files within it)
+	find . -name "*.out" -exec rm -rf {} \; 	# Delete .out files.
+	find . -name "*.so" -exec rm -rf {} \;		# Delete .so shared library file.
