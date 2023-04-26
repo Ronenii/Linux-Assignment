@@ -22,4 +22,5 @@ export LD_LIBRARY_PATH
 # run the program from here. you can't run the program from outside the script because the LD_LIBRARY PATH
 # is only set for the current program and not outside of it. it is possible to run the above command
 # without the export to use it outside of this script's scope.
+# Added a README file that explains this issue, so that we dont need to add to the library path from here.
 ./program1.out
