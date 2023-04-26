@@ -14,11 +14,9 @@ int main(int argc, char* argv[]) {
     }
     string path = program_path; // Convert to string.
 
-    // Find the position of second to last '/' character.
+    // Find the position of the last '/' character.
     size_t pos = path.find_last_of('/');
     if(pos != string::npos) {
-        pos = path.find_last_of('/', pos - 1);
-
         // Update to path to remove the excess characters.
         path = path.substr(0, pos);
     }
@@ -27,11 +25,9 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    // Add the script to the path.
+    // Add the script name to the path.
     path += "/script.sh";
-
-    cout << path << endl;
-
+    
     for (int i = 1; i < argc; ++i) { // Add airports to the path.
         path += " " + (string)argv[i];
     }
