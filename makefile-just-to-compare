@@ -35,7 +35,7 @@ all: $(OBJS) move
 	$(CXX) -c $(CXXFLAGS) $< -o $@
 
 # Rule for creating shared library
-$(LIB): $(UTILS)
+$(LIB): $(ULITILS)
 	$(CXX) -shared -fPIC $(CXXFLAGS) $^ -o $@ 
 # move the directory to parent directory
 ODIR := .
