@@ -42,25 +42,6 @@ vector<Flight> Functions::getFlightsByCallsign(string callsign, vector<AirportFl
     return res;
 }
 
-void Functions::rerunBashScript(vector<AirportFlights> &DB)
-{
-    path parent_path = current_path().parent_path().parent_path() / "script.sh";
-    string command = parent_path.string();
-    addAirportNamesToStr(command,DB);
-    string script_dir = parent_path.parent_path().string();
-    chdir(script_dir.c_str());
-    command = "bash " + command;
-    std::system(command.c_str());
-}
-
-void Functions::addAirportNamesToStr(string& path, vector<AirportFlights> &DB)
-{
-    for(const auto& airport : DB)
-    {
-        path = path + " " + airport.getAirportName();
-    }
-}
-
 void Functions::pushFlights(const vector<Flight> &src, vector<Flight> &dst)
 {
     for(const auto& flight: src)

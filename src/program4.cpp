@@ -26,8 +26,8 @@ int main(int argc, char* argv[]) {
     }
 
     // Add the script name to the path.
-    path += "/script.sh";
-    
+    path += "/flight_scanner.sh";
+
     for (int i = 1; i < argc; ++i) { // Add airports to the path.
         path += " " + (string)argv[i];
     }

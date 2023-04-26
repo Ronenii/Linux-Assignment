@@ -12,9 +12,6 @@ public:
     static vector<Flight> getArrivalsByAirportName(string airportName, vector<AirportFlights> &DB);
     static vector<Flight> getFlightsByCallsign(string callsign, vector<AirportFlights> &DB);
     static void pushFlightsByCallsign(const vector<Flight> &src, vector<Flight> &dst, string callsign);
-    static void rerunBashScript(vector<AirportFlights> &DB);
-    static void addAirportNamesToStr(string& path, vector<AirportFlights> &DB);
-
 };
 
 
