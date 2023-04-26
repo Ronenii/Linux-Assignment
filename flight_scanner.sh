@@ -38,14 +38,16 @@ for param in "$@"; do
 
   else
     # parse the received arrivals' and departures' data in a CSV format.
-    grep -o '[^{]*{\([^{}]*\)}' tmp1.tmp | sed 's/{\(.*\)}/{\1}/' | tr -d '[:space:]' | sed -e 's/[{}]/''/g' | tr ',' '\n' | awk -F: '{print $2}' | tr -d '"' | awk '{printf "%s%s", $0, (NR%6 ? "," : "\n")}' | awk 'NR%2==1' > tmp1.tmp
-    cat tmp1.tmp >> $param.arv
-    grep -o '[^{]*{\([^{}]*\)}' tmp2.tmp | sed 's/{\(.*\)}/{\1}/' | tr -d '[:space:]' | sed -e 's/[{}]/''/g' | tr ',' '\n' | awk -F: '{print $2}' | tr -d '"' | awk '{printf "%s%s", $0, (NR%6 ? "," : "\n")}' | awk 'NR%2==1' > tmp2.tmp
-    cat tmp2.tmp >> $param.dpt
+    grep -o '[^{]*{\([^{}]*\)}' tmp1.tmp | sed 's/{\(.*\)}/{\1}/' | tr -d '[:space:]' | sed -e 's/[{}]/''/g' | tr ',' '\n' | awk -F: '{print $2}' | tr -d '"' | awk '{printf "%s%s", $0, (NR%6 ? "," : "\n")}' | awk 'NR%2==1' > tmp3.tmp
+    cat tmp3.tmp >> $param.arv
+    grep -o '[^{]*{\([^{}]*\)}' tmp2.tmp | sed 's/{\(.*\)}/{\1}/' | tr -d '[:space:]' | sed -e 's/[{}]/''/g' | tr ',' '\n' | awk -F: '{print $2}' | tr -d '"' | awk '{printf "%s%s", $0, (NR%6 ? "," : "\n")}' | awk 'NR%2==1' > tmp4.tmp
+    cat tmp4.tmp >> $param.dpt
 
     # delete temporary files created.
     rm tmp1.tmp
     rm tmp2.tmp
+    rm tmp3.tmp
+    rm tmp4.tmp
 
     cd .. # go back one directory.
   fi
