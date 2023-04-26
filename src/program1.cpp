@@ -7,16 +7,14 @@ int main() {
     string input;
     cin >> input;
 
-    for(auto & airport: DB)
-    {
-        if(input == airport.getAirportName())
-        {
+    for(auto & airport: DB) {
+        if(input == airport.getAirportName()) {
             arrivals = airport.getArrivals();
             break;
         }
     }
-    for(auto & flight: arrivals)
-    {
+
+    for(auto & flight: arrivals) {
         cout<< "Flight " << flight.getCallsign() << " arriving for " << flight.getEstDepartureAirport() << ", tookoff at " << flight.getFirstSeen() << " landed at " << flight.getLastSeen() << endl;
     }
 
