@@ -1,9 +1,9 @@
 README:
 
-if you have the following error- 
+if you encounter the following error- 
 "error while loading shared libraries: libshared_library.so: cannot open shared object file: No such file or directory"
 
-you will need to run the following command in order to tell the program where to look for the shared library during runtime-
+you will need to run the following command in the terminal in order to tell the program where to look for the shared library during runtime-
 $ LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$PWD"
 
 you can also use 'echo' and check that the correct directory (in which the shared library .so file exists) was added to LD_LIBRARY_PATH-

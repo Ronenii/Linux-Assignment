@@ -1,5 +1,4 @@
 # Compiler and flags
-export LD_LIBRARY_PATH := $(LD_LIBRARY_PATH):./lib
 
 CC = g++
 CFLAGS = -fPIC -std=c++17

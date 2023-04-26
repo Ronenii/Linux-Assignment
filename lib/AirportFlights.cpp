@@ -8,7 +8,7 @@ vector<AirportFlights> AirportFlights::getDatabase()
 {
     vector<AirportFlights> res;
 
-    path parent_path = current_path().parent_path();
+    path parent_path = current_path();
     parent_path += "/flightsDB";
 
     string curr_path;

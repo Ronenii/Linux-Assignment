@@ -1,10 +1,7 @@
 #include <iostream>
 #include "../lib/AirportFlights.h"
-#include "../lib/Functions.h"
-#include "../lib/Flight.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
     vector<AirportFlights> DB = AirportFlights::getDatabase();
     vector<Flight> arrivals;
     string input;
