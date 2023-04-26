@@ -1,23 +1,31 @@
 #include <iostream>
 #include "../lib/AirportFlights.h"
 
-int main() {
+void printFlights(const vector<Flight>& flights);
+
+int main(int argc, char* argv[]) {
     vector<AirportFlights> DB = AirportFlights::getDatabase();
     vector<Flight> arrivals;
-    string input;
-    cin >> input;
 
-    for(auto & airport: DB) {
-        if(input == airport.getAirportName()) {
-            arrivals = airport.getArrivals();
-            break;
+    // For every airport received:
+    for (int i = 0; i <= argc; ++i) {
+        for(auto& airport: DB) { // Find that airport in the database.
+            if(argv[i] == airport.getAirportName()) {   // Found the airport
+                arrivals = airport.getArrivals();       // Get the arrival flights for the airport.
+                printFlights(arrivals);           // Print arrival flights.
+                break;
+            }
         }
     }
-
-    for(auto & flight: arrivals) {
-        cout<< "Flight " << flight.getCallsign() << " arriving for " << flight.getEstDepartureAirport() << ", tookoff at " << flight.getFirstSeen() << " landed at " << flight.getLastSeen() << endl;
-    }
-
-
     return 0;
+}
+
+/**
+ * Print flights within a vector.
+ */
+void printFlights(const vector<Flight>& flights) {
+    for(auto & flight: flights) {
+        cout<< "Flight " << flight.getCallsign() << " arriving from " << flight.getEstDepartureAirport()
+        << ", tookoff at " << flight.getFirstSeen() << " landed at " << flight.getLastSeen() << endl;
+    }
 }
