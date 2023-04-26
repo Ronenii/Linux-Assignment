@@ -1,5 +1,4 @@
 # Compiler and flags
-
 CC = g++
 CFLAGS = -fPIC -std=c++17
 
@@ -10,7 +9,6 @@ LDFLAGS = -L. -I./lib -lshared_library -Wl,-rpath=$(PWD)
 SRCDIR=src# Source files directory
 LIBDIR=lib# Shared library files directory
 OBJDIR=obj# Object files directory
-PARENT_DIR := .# path from root to the parent directory
 
 # File Names
 LIB = libshared_library.so	# name of shared library.
@@ -22,7 +20,7 @@ LIB_SRCS := $(wildcard $(LIBDIR)/*.cpp)
 
 # Create corresponding object files from shared library source files.
 # Takes the cpp files from LIBDIR directory and creates corresponding object files in the OBJDIR directory.
-LIB_OBJS := $(patsubst $(LIBDIR)/%.cpp,$(OBJDIR)/%.o,$(LIB_SRCS)) #$(LIB_SRCS:.cpp=.o)
+LIB_OBJS := $(patsubst $(LIBDIR)/%.cpp,$(OBJDIR)/%.o,$(LIB_SRCS))
 
 
 # Array of the source files of the programs.
@@ -57,6 +55,7 @@ $(OBJDIR)/%.o : $(SRCDIR)/%.cpp
 	$(CC) $^ -o $@ $(LDFLAGS) $(LIB)
 
 # Rule to prevent the makefile from deleting the "intermediate" object files:
+# (not to be used, only for debugging purposes)
 .PRECIOUS: $(OBJDIR)/%.o
 
 
