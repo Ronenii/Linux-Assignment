@@ -2,7 +2,7 @@
 export LD_LIBRARY_PATH := $(LD_LIBRARY_PATH):./lib
 
 CC = g++
-CFLAGS = -fPIC -Wall -std=c++17
+CFLAGS = -fPIC -std=c++17
 
 # Linker flags
 LDFLAGS = -L. -I./lib -lshared_library -Wl,-rpath=$(PWD)
@@ -11,6 +11,7 @@ LDFLAGS = -L. -I./lib -lshared_library -Wl,-rpath=$(PWD)
 SRCDIR=src# Source files directory
 LIBDIR=lib# Shared library files directory
 OBJDIR=obj# Object files directory
+PARENT_DIR := .# path from root to the parent directory
 
 # File Names
 LIB = libshared_library.so	# name of shared library.
@@ -32,7 +33,7 @@ PROG_OBJS := $(patsubst %.cpp,%.out,$(PROG_SRCS))
 
 # Default target
 .PHONY: all clean
-all: $(LIB)
+all: $(LIB) $(PROG_OBJS) out_move obj_move
 
 # Rule for creating the shared library:
 $(LIB) : $(LIB_OBJS)
@@ -46,8 +47,22 @@ $(LIB) : $(LIB_OBJS)
 %.out : %.o
 	$(CC) $^ -o $@ $(LDFLAGS) $(LIB)
 
-# Remove object files and programs
+# Rule to move a .out file to the parent directory.
+out_move:
+	mv ./$(SRCDIR)/*.out $(PARENT_DIR)
+
+# Rule to move a .out file to the obj directory.
+# 	create obj directory if doesn't already exists,
+# 	move .obj files to it.
+obj_move:
+	mkdir -p obj
+	mv ./$(LIBDIR)/*.o $(PARENT_DIR)/$(OBJDIR)
+
+# Clean up- remove .obj/.out/.so files.
+# 1.	Delete objects directory (with the files within it)
+# 2.	Delete .out files.
+# 3.	Delete .so shared library file.
 clean:
-	rm -rf $(OBJDIR)							# Delete objects directory (with the files within it)
-	find . -name "*.out" -exec rm -rf {} \; 	# Delete .out files.
-	find . -name "*.so" -exec rm -rf {} \;		# Delete .so shared library file.
+	rm -rf $(OBJDIR)
+	find . -name "*.out" -exec rm -rf {} \;
+	find . -name "*.so" -exec rm -rf {} \;
