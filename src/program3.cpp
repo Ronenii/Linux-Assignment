@@ -7,7 +7,7 @@ void printFlightsWithICAO24(vector<AirportFlights> &DB, const string& icao24);
 void printFlight(const Flight& flight);
 void runOnFlightsList(vector<Flight> &flights, const string& icao24);
 
-int main(int argc, char* argv[]) {
+int program3(int argc, char* argv[]) {
     vector<AirportFlights> DB = AirportFlights::getDatabase();
 
     for(int i=1; i<argc;i++) {

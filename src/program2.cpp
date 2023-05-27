@@ -25,7 +25,7 @@ bool compareFlights(const Flight &f1, const Flight &f2, const string &airport_na
 }
 
 
-int main(int argc, char *argv[]) {
+int program2(int argc, char *argv[]) {
     string airport_name = argv[1];
 
     // Get the database from the files:

@@ -3,7 +3,7 @@
 
 void printFlights(const vector<Flight>& flights);
 
-int main(int argc, char* argv[]) {
+int program1(int argc, char* argv[]) {
     vector<AirportFlights> DB = AirportFlights::getDatabase();
     vector<Flight> arrivals;
 
