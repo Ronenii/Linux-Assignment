@@ -62,13 +62,11 @@ void Functions::pushFlightsByCallsign(const vector<Flight> &src, vector<Flight> 
 }
 
 void Functions::updateDatabase(vector<AirportFlights>& DB) {
-    path program_path = current_path() / SCRIPT_NAME;
+    path program_path = current_path().parent_path() / SCRIPT_NAME;
 
     for (const AirportFlights& f : DB) { // Add airports to the path.
         program_path += " " + f.getAirportName();
     }
-    
-    cout<< program_path.string()<<endl;
 
     // Run the script.
     int status = system(program_path.c_str());
