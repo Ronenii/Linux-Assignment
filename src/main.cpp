@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include "programs.h"
 
 using namespace std;
 
@@ -14,10 +15,6 @@ enum class MenuOptions{
 };
 
 void printMenu();
-int program1(int argc, char* argv[]);
-int program2(int argc, char *argv[]);
-int program3(int argc, char* argv[]);
-int program4();
 
 int main(int argc, char *argv[]) {
     MenuOptions choice;
